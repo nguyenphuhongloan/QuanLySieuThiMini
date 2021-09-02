@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 13, 2021 lúc 06:17 PM
+-- Thời gian đã tạo: Th9 02, 2021 lúc 10:40 PM
 -- Phiên bản máy phục vụ: 10.4.18-MariaDB
 -- Phiên bản PHP: 8.0.3
 
@@ -312,7 +312,9 @@ INSERT INTO `staff` (`id`, `firstname`, `name`, `username`, `password`, `address
 (13, 'Vũ', 'Mạnh Cường ', 'manhcuong', '123456', 'TP Thủ Đức', '0122344565', 'Nam', '2001', 3, 1),
 (14, 'Nguyen', 'Văn A', 'nguyenvana', '123456', 'Quan 6 TP Ho Chi Minh', '0564127885', 'Nam', '1999', 3, 0),
 (32, 'Lê', 'Quang ', 'lequang', '123456', 'TP Thủ Đức', '01228772322', 'Nam', '2001', 2, 1),
-(35, 'a', 'a ', 'a', 'a', 'a', '0123456789', 'Nam', '2001', 1, 1);
+(35, 'a', 'a ', 'a', 'a', 'a', '0123456789', 'Nam', '2001', 1, 1),
+(38, 'admin', 'admin', 'admin', 'admin', 'admin', '0123456789', 'Nam', '2001', 1, 1),
+(39, 'admin', 'admin', 'admin', 'admin', 'admin', '0123456789', 'Nam', '2001', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -462,7 +464,7 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT cho bảng `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT cho bảng `supplier`

@@ -21,6 +21,7 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import java.awt.Desktop;
 import java.io.File;
 import java.io.FileOutputStream;
 /**
@@ -114,6 +115,10 @@ public class inbill {
         tongtien.setAlignment(Paragraph.ALIGN_RIGHT);
         bill.add(tongtien);
         bill.close();
+        Desktop desktop = Desktop.getDesktop();
+        File file = new File(fileName);
+        desktop.open(file);
+
         
     }
     public PdfPCell createCell(String s,Font font)
