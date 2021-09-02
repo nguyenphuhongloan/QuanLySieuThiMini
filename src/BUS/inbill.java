@@ -107,9 +107,6 @@ public class inbill {
             table.addCell(createCell(Integer.toString(item.getSlSP()), new Font(bf,11)));
             tong=item.getGiaSP()*item.getSlSP();
         }
-       
-        
-        
         bill.add(table);
         Paragraph tongtien = new Paragraph("Tổng tiền: "+ tong,new Font(bf,13));
         tongtien.setAlignment(Paragraph.ALIGN_RIGHT);
